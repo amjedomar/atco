@@ -14,6 +14,11 @@
   "bin": {
     "atco": "./src/index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amjedomar/atco.git"
+  },
+  "homepage": "https://github.com/amjedomar/atco#readme",
   "author": "Amjed Omar <amjedomar201@gmail.com>",
   "license": "MIT",
   "dependencies": {
