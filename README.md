@@ -19,9 +19,9 @@ yarn add --dev typescript atco
 ```
 
 ## Getting Started
-- Navigate to project root and create `tconfig.json` file
+- Navigate to project root
 
-- In `tconfig.json` file you have to specific the output directory using `compilerOptions.outDir` and specific the target directory using `include`, like the following example
+- Create `tconfig.json`, inside it you have to specific the output directory using `compilerOptions.outDir` and specific the target directory using `include`, like the following example
 
 ```json
 {
@@ -32,13 +32,28 @@ yarn add --dev typescript atco
 }
 ```
 
-- Then run the following command to start nodejs server in development mode
-```shell script
-atco -w --exec "node ./dist/index.js"
+- In `package.json` add these two scripts
+```json
+{
+  "scripts": {
+    "start:dev": "atco -w --exec \"node ./dist/index.js\"",
+    "start:prod": "atco && node ./dist/index.js"
+  }
+}
 ```
-- Or run it in production mode using
+- To start app in `development` mode run the following command
 ```shell script
-atco --exec "node ./dist/index.js"
+# Using npm
+npm start:dev
+# Or using yarn
+yarn start:dev
+```
+- Or start it in `production` mode using
+```shell script
+# Using npm
+npm start:prod
+# Or using yarn
+yarn start:prod
 ```
 
 ## The Additional Options (API)
@@ -53,6 +68,6 @@ atco --exec "node ./dist/index.js"
 
 The other options except (`--project`, `-p`, `--version`,`--help`) will be forward to **Typescript Compiler** (take a look at [typescript compiler options](https://www.typescriptlang.org/docs/handbook/compiler-options.html))
 
-## Know Problems
+## Known Problems
 The following problems is currently happening however we will try to fix it in the future
 - In `watch` mode atco doesn't track remove event (so if you remove file or directory you have to rerun command)
