@@ -1,0 +1,13 @@
+# Editors / IDEs
+.idea
+.vscode
+
+# Test
+test
+
+# Dependenies
+node_modules
+
+# Yarn Logs
+yarn-error.log
+yarn-debug.log

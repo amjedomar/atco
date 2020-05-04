@@ -1,0 +1,25 @@
+{
+  "name": "atco",
+  "version": "1.0.0",
+  "description": "The tool that provide powerful additional options for Typescript Compiler",
+  "keywords": [
+    "typescript",
+    "ts",
+    "compiler",
+    "tsc"
+  ],
+  "engines": {
+    "node": ">= 12.16.0"
+  },
+  "bin": {
+    "atco": "./src/index.js"
+  },
+  "author": "Amjed Omar <amjedomar201@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "chokidar": "^3.4.0",
+    "cross-spawn": "^7.0.2",
+    "string-argv": "^0.3.1"
+  }
+}
