@@ -1,6 +1,6 @@
 {
   "name": "atco",
-  "version": "1.0.2",
+  "version": "1.0.6",
   "description": "The tool that provide powerful additional options for Typescript Compiler",
   "keywords": [
     "typescript",
@@ -11,9 +11,7 @@
   "engines": {
     "node": ">= 12.16.0"
   },
-  "bin": {
-    "atco": "./src/index.js"
-  },
+  "bin": "./src/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/amjedomar/atco.git"
