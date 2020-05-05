@@ -21,7 +21,7 @@ yarn add --dev typescript atco
 ## Getting Started
 - Navigate to project root
 
-- Create `tconfig.json`, inside it you have to specific the output directory using `compilerOptions.outDir` and specific the target directory using `include`, like the following example
+- Create `tsconfig.json`, inside it you have to specific the output directory using `compilerOptions.outDir` and specific the target directory using `include`, like the following example
 
 ```json
 {
