@@ -1,5 +1,6 @@
 const spawn = require('cross-spawn');
 const { parseArgsStringToArgv } = require('string-argv');
+const kill = require('tree-kill');
 
 const runCommand = (command) => {
   const parts = parseArgsStringToArgv(command);
@@ -12,7 +13,7 @@ const runCommand = (command) => {
 
   return {
     kill: () => {
-      spawnCommand.kill();
+      kill(spawnCommand.pid, 'SIGKILL');
     }
   };
 };

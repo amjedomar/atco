@@ -1,6 +1,6 @@
 {
   "name": "atco",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The tool that provide powerful additional options for Typescript Compiler",
   "keywords": [
     "typescript",
@@ -25,6 +25,7 @@
     "chalk": "^4.0.0",
     "chokidar": "^3.4.0",
     "cross-spawn": "^7.0.2",
-    "string-argv": "^0.3.1"
+    "string-argv": "^0.3.1",
+    "tree-kill": "^1.2.2"
   }
 }
