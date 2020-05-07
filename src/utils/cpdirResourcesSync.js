@@ -16,7 +16,7 @@ const cpdirResourcesSync = (src, dest) => {
 
     if (resourceStat.isDirectory() && !fs.existsSync(resourceDestPath)) {
       fs.mkdirSync(resourceDestPath);
-      cpdirResourcesSync(src, dest);
+      cpdirResourcesSync(resourceSrcPath, resourceDestPath);
     } else if (resourceStat.isFile()) {
       const isFileExclude = /\.[t|j]s$/i.test(path.extname(resource));
 
