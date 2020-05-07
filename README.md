@@ -18,7 +18,7 @@ Or using **yarn**
 yarn add --dev typescript atco
 ```
 
-## Getting Started
+## Usage
 - Navigate to project root
 
 - Create `tsconfig.json`, inside it you have to specific the output directory using `compilerOptions.outDir` and specific the target directory using `include`, like the following example
@@ -55,6 +55,9 @@ npm start:prod
 # Or using yarn
 yarn start:prod
 ```
+
+## Examples
+- [atco-simple-example](https://github.com/amjedomar/atco-simple-example)
 
 ## The Additional Options (API)
 

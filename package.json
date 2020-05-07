@@ -1,6 +1,6 @@
 {
   "name": "atco",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "The tool that provide powerful additional options for Typescript Compiler",
   "keywords": [
     "typescript",
