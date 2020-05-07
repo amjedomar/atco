@@ -5,7 +5,6 @@ The tool that provide powerful additional options for **Typescript Compiler**
 - `nodejs` >= `v12.16.0`
  - `npm` >= `v6.14.0` (or `yarn` >= `v1.22.0`)
 
-
 ## Installation
 using **npm**
 
@@ -21,8 +20,8 @@ yarn add --dev typescript atco
 ## Usage
 - Navigate to project root
 
-- Create `tsconfig.json`, inside it you have to specific the output directory using `compilerOptions.outDir` and specific the target directory using `include`, like the following example
 
+- Create `tsconfig.json`, inside it you have to specific the output directory using `compilerOptions.outDir` and specific the target directory using `include`, like the following example
 ```json
 {
   "compilerOptions": {
@@ -31,6 +30,7 @@ yarn add --dev typescript atco
   "include": ["./src/**/*"]
 }
 ```
+
 
 - In `package.json` add these two scripts
 ```json
@@ -41,6 +41,8 @@ yarn add --dev typescript atco
   }
 }
 ```
+
+
 - To start app in `development` mode run the following command
 ```shell script
 # Using npm
@@ -48,6 +50,8 @@ npm start:dev
 # Or using yarn
 yarn start:dev
 ```
+
+
 - Or start it in `production` mode using
 ```shell script
 # Using npm
