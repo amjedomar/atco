@@ -74,7 +74,7 @@ if (args.watch) {
   compile.stdout.on('data', (stdout) => {
     if (stdout.substring(1) !== 'c') {
       stdout.split('\r\n').filter(e => e.length > 0).forEach(msg => {
-        const note = msg.substring(msg.indexOf('-') > -1 ? msg.indexOf('-') + 2 : msg.length);
+        const note = msg.substring(msg.indexOf('-') > -1 ? msg.indexOf('-') + 2 : msg.length).trim();
 
         if (
           note === 'Starting compilation in watch mode...' ||
